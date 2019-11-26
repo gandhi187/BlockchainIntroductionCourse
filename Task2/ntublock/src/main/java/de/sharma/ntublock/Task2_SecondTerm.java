@@ -36,11 +36,11 @@ public class Task2_SecondTerm {
 		HexConverter hexConvert = new HexConverter();
 		LOGGER.info("Connect to Ether...");
 		// connect to a hosted ether node (ropsten testnet)
-		Web3j web3 = Web3j.build(new HttpService("https://ropsten.infura.io/v3/cfd2b23ebbf149e0b00686dedfbcf704"));
+		Web3j web3 = Web3j.build(new HttpService("<Type in your Service URL""));
 
 		// credents
 		Credentials credentials = Credentials
-				.create("a563c0c49496680e5fb032887eaa93e586e156ced63893ee734186a1dcc9edc3");
+				.create("copy here your private key");
 
 		// load the function from the wrapper class (PJ2)
 		PJ2 registryContract = PJ2.load("0xC820cBdc60c879cB73Cdd895e7e89E796f6C6C16", web3, credentials,
